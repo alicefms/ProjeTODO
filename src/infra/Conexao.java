@@ -4,13 +4,17 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+/**
+ * Configura a conexão com o banco de dados MySQL
+ * e os métodos commit, rollback e close
+ */
 public class Conexao {
+
     private Connection connection = null;
     private static final String USERNAME = "root";
-
     private static final String PASSWORD = "654321";
-
     private final String DATABASE_URL = "jdbc:mysql://localhost:3306/todo?useTimezone=true&serverTimezone=UTC";
+
     public Conexao() throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.cj.jdbc.Driver");
         this.connection = DriverManager.getConnection(DATABASE_URL, USERNAME, PASSWORD);

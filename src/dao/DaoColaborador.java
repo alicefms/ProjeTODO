@@ -19,6 +19,12 @@ public class DaoColaborador {
     }
 
 
+    /**
+     * Adiciona um novo colaborador no banco de dados, passando apenas o nome do colaborador como parâmetro
+     * já que o id é autoincrementado no banco.
+     * @param nomeColaborador
+     * @throws SQLException
+     */
     public void incluirColaborador(String nomeColaborador) throws SQLException {
         query = "insert into colaborador (nomeColaborador) values (?)";
         try {
@@ -33,6 +39,12 @@ public class DaoColaborador {
         }
     }
 
+    /**
+     * Altera o nome colaborador no banco de dados
+     * @param idColaborador
+     * @param novoNome
+     * @throws SQLException
+     */
     public void alterarColaborador(int idColaborador, String novoNome) throws SQLException {
         query = "update colaborador set nomeColaborador = ? where idColaborador=?";
         try{
@@ -48,6 +60,11 @@ public class DaoColaborador {
         }
     }
 
+    /**
+     * Exclui do banco o colaborador que tem a id passada como parâmetro
+     * @param idColaborador
+     * @throws SQLException
+     */
     public void excluirColaborador(int idColaborador) throws SQLException {
         query = "delete from colaborador where idColaborador = ? ";
         try{
@@ -63,6 +80,11 @@ public class DaoColaborador {
 
     }
 
+    /**
+     * Consulta todos os colaboradores cadastrados no banco de dados
+     * @return - retorna uma lista de objetos do tipo colaborador - para exibir no console, usar o alguma funçao que printe.
+     * @throws SQLException
+     */
     public List<Colaborador> consultarColaboradores() throws SQLException {
         query = "select * from colaborador";
         try{
@@ -82,6 +104,12 @@ public class DaoColaborador {
         }
     }
 
+    /**
+     * Consulta um colaborador pelo ia
+     * @param idColaborador
+     * @return - retorna um objeto do tipo colaborador
+     * @throws SQLException
+     */
     public Colaborador consultarColaborador(int idColaborador) throws SQLException {
         query = "select * from colaborador where idColaborador = ?";
         try{

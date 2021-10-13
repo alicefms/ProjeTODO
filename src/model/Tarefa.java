@@ -2,8 +2,13 @@ package model;
 
 import java.sql.Timestamp;
 
+/**
+ * Modela a classe Tarefa,
+ * Traz 2 construtores (um com id de tarefa e outro sem o id de tarefa)
+ * Traz os gets e sets
+ * Traz o ToString()
+ */
 public class Tarefa {
-
 
     public int idTarefa;
     public int idColaborador;
@@ -95,14 +100,12 @@ public class Tarefa {
 
     @Override
     public String toString() {
-        return "Tarefa{" +
-                "idTarefa=" + idTarefa +
-                ", idColaborador=" + idColaborador +
-                ", descrTarefa='" + descrTarefa + '\'' +
-                ", dataHoraInicio=" + dataHoraInicio +
-                ", dataHoraFim=" + dataHoraFim +
-                ", statusTarefa='" + statusTarefa + '\'' +
-                ", prioridadeTarefa='" + prioridadeTarefa + '\'' +
-                '}';
+        return  "id = " + idTarefa + '\n'+
+                "idColaborador = " + idColaborador + '\n' +
+                "descrição = " + descrTarefa + '\n' +
+                "Inicio = " + dataHoraInicio + '\n' +
+                "Fim = " + dataHoraFim + '\n' +
+                "status = " + statusTarefa + '\n' +
+                "prioridade = " + prioridadeTarefa + '\n' ;
     }
 }

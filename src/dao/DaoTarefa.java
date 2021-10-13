@@ -19,7 +19,8 @@ public class DaoTarefa {
     }
 
     public void incluirTarefa(Tarefa tarefa) throws SQLException {
-        query = "insert into tarefa (idColaborador, descrTarefa, dataHoraInicio, dataHoraFim, statusTarefa, prioridadeTarefa) values(?,?,?,?,?,?)";
+        query = "insert into tarefa (idColaborador, descrTarefa, dataHoraInicio, dataHoraFim, " +
+                "statusTarefa, prioridadeTarefa) values(?,?,?,?,?,?)";
         try{
             PreparedStatement statement = this.conexao.getConnection().prepareStatement(query);
             statement.setInt(1, tarefa.getIdColaborador());

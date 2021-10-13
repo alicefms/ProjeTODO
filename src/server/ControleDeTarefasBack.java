@@ -14,10 +14,10 @@ public class ControleDeTarefasBack {
         DaoTarefa daoTarefa = new DaoTarefa();
         DaoColaborador daoColaborador = new DaoColaborador();
 
-        /* //INCLUIR TAREFA
+         //INCLUIR TAREFA
         Tarefa tarefa = new Tarefa(1, "Terminar os métodos", new Timestamp(System.currentTimeMillis()),new Timestamp(System.currentTimeMillis()), "I", "A" );
         daoTarefa.incluirTarefa(tarefa);
-        */
+
 
         /*  //CONSULTAR TAREFAS
         System.out.println(daoTarefa.consultarTarefas());

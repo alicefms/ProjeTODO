@@ -1,7 +1,9 @@
 package model;
 
+/**
+ * Modela a classe Colaborador, traz um construtor e os gets e sets e o toString()
+ */
 public class Colaborador {
-
 
     public int idColaborador;
     public String nomeColaborador;
@@ -29,9 +31,7 @@ public class Colaborador {
 
     @Override
     public String toString() {
-        return "Colaborador{" +
-                "idColaborador=" + idColaborador +
-                ", nomeColaborador='" + nomeColaborador + '\'' +
-                '}';
+        return  "id = " + idColaborador + '\n' +
+                "nome" + nomeColaborador + '\n' ;
     }
 }
