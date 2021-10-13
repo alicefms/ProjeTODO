@@ -11,26 +11,6 @@ public class Colaborador {
         this.nomeColaborador = nomeColaborador;
     }
 
-    public void incluirColaborador() {
-
-    }
-
-    public void alterarColaborador() {
-
-    }
-
-    public void excluirColaborador() {
-
-    }
-
-    public void consultarColaboradores() {
-
-    }
-
-    public void consultarColaborador() {
-
-    }
-
     public int getIdColaborador() {
         return idColaborador;
     }

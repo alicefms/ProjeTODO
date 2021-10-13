@@ -35,7 +35,6 @@ public class ControleDeTarefasBack {
         daoTarefa.alterarTarefa(3, 1, "Fazer métodos de colaborador", new Timestamp(System.currentTimeMillis()), "C", "U");
         */
 
-
        /* // INSERE NOVO COLABORADOR
         daoColaborador.incluirColaborador("Ambrosia");
        */
