@@ -100,8 +100,6 @@ public class DaoTarefa {
         }catch (SQLException e){
             throw e;
         }
-
-
     }
 
     public Tarefa consultarTarefa(int idTarefa) throws SQLException {

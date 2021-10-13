@@ -6,6 +6,11 @@ public class Colaborador {
     public int idColaborador;
     public String nomeColaborador;
 
+    public Colaborador(int idColaborador, String nomeColaborador) {
+        this.idColaborador = idColaborador;
+        this.nomeColaborador = nomeColaborador;
+    }
+
     public void incluirColaborador() {
 
     }
@@ -40,5 +45,13 @@ public class Colaborador {
 
     public void setNomeColaborador(String nomeColaborador) {
         this.nomeColaborador = nomeColaborador;
+    }
+
+    @Override
+    public String toString() {
+        return "Colaborador{" +
+                "idColaborador=" + idColaborador +
+                ", nomeColaborador='" + nomeColaborador + '\'' +
+                '}';
     }
 }
